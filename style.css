@@ -4,6 +4,8 @@ body {
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 #menunav {
   height: 44px;
@@ -82,9 +84,13 @@ body {
   margin-top: 2.5px;
   filter: invert(100%);
 }
-#iphonesection {
+#iphonesection,
+#iphoneprosection,
+#ipadprosection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #iphonesection a {
@@ -105,7 +111,7 @@ body {
   align-self: center;
   letter-spacing: -0.01em;
   position: relative;
-  top: 2px;
+  top: -20px;
   left: -2px;
   z-index: 11;
 }
@@ -120,22 +126,22 @@ body {
   font-size: 3.4em;
   font-weight: 500;
   letter-spacing: -2px;
-  z-index: 10;
+  z-index: 12;
   position: relative;
-  top: -7px;
-  left: 43.5%;
-  width: 20%;
-  max-height: 30px;
+  align-self: center;
+  top: 20px;
+  margin: auto;
+  max-height: 3.4em;
 }
 #iphonesection img {
   display: block;
-  height: 734px;
+  height: 740px;
   width: 100%;
   object-fit: cover;
   object-position: center;
   position: relative;
-  top: -350px;
   z-index: 1;
+  top: -330px;
 }
 #iphonesection h3 {
   color: black;
@@ -146,7 +152,7 @@ body {
   display: block;
   align-self: center;
   position: relative;
-  top: -40px;
+  top: -15px;
 
   z-index: 20;
 }
@@ -159,7 +165,7 @@ body {
   align-self: center;
   letter-spacing: 0em;
   position: relative;
-  top: -80px;
+  top: -57px;
 
   z-index: 10;
 }
@@ -173,36 +179,42 @@ body {
   gap: 40px;
   letter-spacing: -0.02em;
   position: relative;
-  top: -85px;
+  top: -58px;
   left: -2px;
   z-index: 11;
 }
 #buylinks a:hover {
   text-decoration: underline;
 }
-#iphoneprosection {
-  display: flex;
-  flex-direction: column;
+#buylinks a:focus {
+  outline: 0.3em solid rgb(69, 92, 223);
+  transition: 0s;
+}
+#iphoneprosection,
+#ipadprosection {
   margin-left: -8px;
   margin-right: -8px;
+  margin-top: 0px;
 }
 
-#iphoneprosection a {
+#iphoneprosection a,
+#ipadprosection a {
   text-decoration: none;
   color: rgb(7, 124, 219);
   font-weight: 500;
   font-size: 1em;
   display: flex;
   flex-direction: column;
-  margin-top: 11px;
 }
 
-#buyproonline a {
+#buyproonline a,
+#buyipadproonline a {
   font-size: 0.99em;
   letter-spacing: -0.02em;
   font-weight: 500;
 }
-#iphoneprosection h2 {
+#iphoneprosection h2,
+#ipadprosection h2 {
   display: block;
   font-size: 3.4em;
   font-weight: 500;
@@ -215,17 +227,20 @@ body {
   max-height: 30px;
   color: white;
 }
-#iphoneprosection img {
+
+#iphoneprosection img,
+#ipadprosection img {
   display: block;
   height: 693px;
   width: 100%;
   object-fit: cover;
   object-position: center;
   position: relative;
-  top: -550px;
   z-index: 1;
 }
-#iphoneprosection h3 {
+
+#iphoneprosection h3,
+#ipadprosection h3 {
   font-size: 1.65em;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -233,12 +248,13 @@ body {
   display: block;
   align-self: center;
   position: relative;
-  top: -280px;
   margin: auto;
   color: white;
   z-index: 20;
 }
-#buyproonline {
+
+#buyproonline,
+#buyipadproonline {
   font-size: 1.05em;
   font-weight: 400;
   color: grey;
@@ -247,10 +263,12 @@ body {
   align-self: center;
   letter-spacing: 0em;
   position: relative;
-  top: -297px;
+
   z-index: 10;
 }
-#buyprolinks {
+
+#buyprolinks,
+#buyipadprolinks {
   font-size: 1.19em;
   font-weight: 300;
   color: rgb(11, 72, 185);
@@ -260,13 +278,59 @@ body {
   gap: 40px;
   letter-spacing: -0.02em;
   position: relative;
-  top: -314px;
+
   z-index: 11;
 }
+
+#buyprolinks a:hover,
+#buyipadprolinks a:hover {
+  text-decoration: underline;
+}
+#buyprolinks a:focus,
+#buyipadprolinks a:focus,
+#buyonline a:focus {
+  outline: 0.29em solid rgb(69, 136, 223);
+  transition: 0s;
+}
+
+/* dont copy thissss below*/
 .taepercent {
   text-decoration: underline;
   font-weight: bold;
 }
+#iphonesection {
+  height: 1100px;
+}
 #buyonline a:last-child {
   color: grey;
+}
+#iphoneprosection img {
+  top: -495px;
+}
+#ipadprosection img {
+  top: -640px;
+}
+#iphoneprosection h2 {
+  top: -300px;
+}
+#ipadprosection h2 {
+  top: -450px;
+}
+#iphoneprosection h3 {
+  top: -258px;
+}
+#ipadprosection h3 {
+  top: -405px;
+}
+#buyproonline {
+  top: -260px;
+}
+#buyipadproonline {
+  top: -410px;
+}
+#buyprolinks {
+  top: -260px;
+}
+#buyipadprolinks {
+  top: -414px;
 }
