@@ -49,16 +49,34 @@ body {
   color: white;
 }
 #navelements a:focus {
-  border: 0.3em rgb(69, 92, 223) solid;
-  margin: -5px;
+  outline: 0.3em solid rgb(69, 92, 223);
   transition: 0s;
-  outline: 0;
 }
 #logosmall {
   margin-top: -10px;
 }
+
+#navapplelogo a:focus {
+  outline: 0;
+}
+
 #shopcart {
-  margin-top: -10px;
+  height: 42px;
+  width: 27px;
+  position: relative;
+  top: -23px;
+  margin-top: 15px;
+  margin-bottom: -35px;
+  padding-top: -23px;
+  padding-bottom: -33px;
+  transition: none;
+}
+#navcartlogo a:focus {
+  border: 0.3em solid rgb(69, 92, 223);
+  margin-top: -4px;
+  margin-left: -4px;
+
+  outline: none;
 }
 #searchimg {
   margin-top: 2.5px;
@@ -98,6 +116,7 @@ body {
   font-weight: 500;
 }
 #iphonesection h2 {
+  color: black;
   display: block;
   font-size: 3.4em;
   font-weight: 500;
@@ -120,16 +139,16 @@ body {
   z-index: 1;
 }
 #iphonesection h3 {
+  color: black;
   font-size: 1.65em;
   font-weight: 400;
   letter-spacing: -0.02em;
   opacity: 1.2;
-  display: flex;
+  display: block;
   align-self: center;
-
   position: relative;
   top: -40px;
-  left: -3px;
+  left: 42.5%;
   z-index: 20;
 }
 #buyonline2 {
@@ -137,12 +156,12 @@ body {
   font-weight: 400;
   color: grey;
   opacity: 1;
-  display: flex;
+  display: block;
   align-self: center;
   letter-spacing: 0em;
   position: relative;
   top: -80px;
-  left: -2px;
+  left: 40.5%;
   z-index: 10;
 }
 #buylinks {
@@ -158,6 +177,9 @@ body {
   top: -85px;
   left: -2px;
   z-index: 11;
+}
+#buylinks a:hover {
+  text-decoration: underline;
 }
 #iphoneprosection {
   display: flex;
