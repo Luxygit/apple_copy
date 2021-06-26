@@ -4,67 +4,271 @@ body {
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
+/* start of nav */
 #menunav {
-  height: 190px;
+  height: 50px;
   background: rgba(15, 15, 15, 0.855);
   backdrop-filter: blur(20px);
   position: fixed;
   width: 100%;
-  margin-top: -9px;
-  margin-left: -8px;
 
   display: flex;
   z-index: 999;
 }
-#navelements {
+#navbarlarge {
   display: none;
 }
-#smallnavelements {
+#navbarsmall {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  list-style-type: none;
   width: 100%;
 }
-#smallnavelements a {
+#navbarsmall a {
   opacity: 80%;
 }
-#shopcart {
-  height: 180px;
-  width: 180px;
+#shopcarticon {
+  height: 52px;
+  width: 52px;
   position: relative;
   top: -23px;
-  left: -5px;
+
   margin-top: 15px;
   margin-bottom: -35px;
   padding-top: -23px;
-  padding-bottom: -33px;
-  transition: none;
 }
-#menuiconsmall {
-  height: 60px;
-  width: 60px;
+#menuicon {
+  height: 22px;
+  width: 22px;
+}
+#logoicon {
+  width: 22px;
+}
+/* end of nav */
+#iphone12section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: url(mainbackgroundsmall.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
   position: relative;
-  left: 25px;
+  top: 50px;
 }
-#logosmall {
-  width: 72px;
+#iphone12section p,
+#iphone12section h2,
+#iphone12section h3 {
+  display: flex;
+  flex-direction: column;
+}
+#iphone12section p {
+  font-size: 14px;
+  text-align: center;
+  width: 90%;
+}
+#iphone12section a {
+  text-decoration: none;
+  color: rgb(68, 163, 223);
+}
+#iphone12section h2 {
+  font-size: 2em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#iphone12section h3 {
+  font-size: 1.2em;
+  margin-top: 0px;
+  font-weight: 100;
+}
+#iphone12section p:nth-of-type(2) {
+  font-size: 0.9em;
+  margin-top: -10px;
+  font-weight: 400;
+  width: 60%;
+  opacity: 80%;
+}
+#iphone12section div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+/* end of iphone section */
+#iphone12prosection {
+  background: url(iphoneprosmall.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
-  left: 35px;
 }
+#iphone12prosection h2,
+#ipadprosection h2 {
+  font-size: 2em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: white;
+  padding-top: 30px;
+}
+#iphone12prosection h3,
+#ipadprosection h3 {
+  font-size: 1.2em;
+  margin-top: 0px;
+  font-weight: 100;
+  color: white;
+}
+#iphone12prosection p,
+#ipadprosection p {
+  font-size: 14px;
+  text-align: center;
+  width: 70%;
+  color: gray;
+  margin-top: 0px;
+}
+#iphone12prosection a,
+#ipadprosection a {
+  text-decoration: none;
+  color: rgb(68, 163, 223);
+}
+#ipadprosection {
+  background: url(ipadprosmall.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 15px;
+}
+/* end of iphonepro and ipadpro section */
+/*
 #iphonesection,
 #iphoneprosection,
-#ipadprosection {
+.ipadprosection {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+#iphonesection a {
+  text-decoration: none;
+  color: rgb(7, 124, 219);
+  font-weight: 500;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#buyonline {
+  font-size: 0.853em;
+  font-weight: 400;
+  padding-top: 8px;
+  opacity: 1.2;
+  display: flex;
+  align-self: center;
+  letter-spacing: -0.01em;
+  position: relative;
+  top: -20px;
+  left: -2px;
+  z-index: 11;
+}
+#buyonline a {
+  font-size: 0.99em;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+#iphonesection h2 {
+  color: black;
+  display: block;
+  font-size: 3.4em;
+  font-weight: 500;
+  letter-spacing: -2px;
+  z-index: 12;
+  position: relative;
+  align-self: center;
+  top: 20px;
+  margin: auto;
+  max-height: 3.4em;
+}
+#mainbackgroundsmall {
+  display: block;
+  height: 740px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 1;
+  top: -330px;
+}
+
+#mainbackgroundsall {
+  display: none;
+}
+#iphonesection h3 {
+  color: black;
+  font-size: 1.65em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  opacity: 1.2;
+  display: block;
+  align-self: center;
+  position: relative;
+  top: -15px;
+
+  z-index: 20;
+}
+#buyonline2 {
+  font-size: 1.05em;
+  font-weight: 400;
+  color: grey;
+  opacity: 1;
+  display: block;
+  align-self: center;
+  letter-spacing: 0em;
+  position: relative;
+  top: -57px;
+
+  z-index: 10;
+}
+#buylinks {
+  font-size: 1.19em;
+  font-weight: 300;
+  color: rgb(11, 72, 185);
+  opacity: 1;
+  display: flex;
+  gap: 40px;
+  letter-spacing: -0.02em;
+  position: relative;
+  top: -58px;
+  left: -2px;
+  z-index: 11;
+}
+#buylinks a:hover {
+  text-decoration: underline;
+}
+#buylinks a:focus {
+  outline: 0.3em solid rgb(69, 92, 223);
+  transition: 0s;
 }
 #mainbackgroundlarge,
 #iphoneprolarge,
-#ipadprolarge {
+.ipadprolarge {
   display: none;
 }
 #mainbackgroundsmall {
@@ -77,7 +281,7 @@ body {
   z-index: -1;
 }
 #iphoneprosmall,
-#ipadprosmall {
+.ipadprosmall {
   display: block;
   height: 740px;
   width: 100%;
@@ -86,10 +290,9 @@ body {
   position: relative;
   z-index: -1;
 }
-#ipadprosmall {
-}
-/* -----------------DESKTOP------------- */
 
+/* -----------------DESKTOP------------- */
+/*
 @media only screen and (min-width: 734px) {
   #menunav {
     height: 44px;
@@ -167,7 +370,7 @@ body {
   }
   #iphonesection,
   #iphoneprosection,
-  #ipadprosection {
+  .ipadprosection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,16 +474,16 @@ body {
     transition: 0s;
   }
   #iphoneprosection,
-  #ipadprosection {
+  .ipadprosection {
     margin-left: -8px;
     margin-right: -8px;
     margin-top: 0px;
     position: relative;
-    top: -495px;
+    top: -295px;
   }
 
   #iphoneprosection a,
-  #ipadprosection a {
+  .ipadprosection a {
     text-decoration: none;
     color: rgb(7, 124, 219);
     font-weight: 500;
@@ -296,7 +499,7 @@ body {
     font-weight: 500;
   }
   #iphoneprosection h2,
-  #ipadprosection h2 {
+  .ipadprosection h2 {
     display: block;
     font-size: 3.4em;
     font-weight: 500;
@@ -311,7 +514,7 @@ body {
   }
 
   #iphoneprosection h3,
-  #ipadprosection h3 {
+  .ipadprosection h3 {
     font-size: 1.65em;
     font-weight: 400;
     letter-spacing: -0.02em;
@@ -390,34 +593,33 @@ body {
   #iphoneprosmall {
     display: none;
   }
-  #ipadprolarge {
+  .ipadprolarge {
     display: block;
+    height: 793px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: 1;
+    top: 00px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  #firstipad1 {
+    margin-top: 0px;
+  }
+  .ipadprolarge img {
     height: 693px;
     width: 100%;
     object-fit: cover;
     object-position: center;
     position: relative;
     z-index: 1;
-    top: -150px;
   }
-  #ipadprolarge img {
-    display: block;
-    height: 693px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    z-index: 1;
-  }
-  #ipadprosmall {
+  .ipadprosmall {
     display: none;
   }
 
-  /* dont copy thissss below*/
-  .taepercent {
-    text-decoration: underline;
-    font-weight: bold;
-  }
   #iphonesection {
     height: 1100px;
   }
@@ -427,13 +629,13 @@ body {
   #iphoneprosection h2 {
     top: 210px;
   }
-  #ipadprosection h2 {
+  .ipadprosection h2 {
     top: 60px;
   }
   #iphoneprosection h3 {
     top: 248px;
   }
-  #ipadprosection h3 {
+  .ipadprosection h3 {
     top: 100px;
   }
   #buyproonline {
@@ -479,4 +681,78 @@ body {
     color: black;
   }
 }
-/* JUST FINISH MOBILE VIEW */
+JUST FINISH MOBILE VIEW */
+/* dont copy thissss below*/
+.taepercent {
+  text-decoration: underline;
+  font-weight: bold;
+  display: inline;
+}
+
+@media screen and (min-width: 765px) {
+  #navbarsmall {
+    display: none;
+  }
+  #navbarlarge {
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  #navbarlarge a {
+    font-size: 13px;
+    opacity: 80%;
+    color: white;
+    text-decoration: none;
+  }
+  #navbarlarge a:hover {
+    opacity: 100%;
+  }
+  #navbarlarge li {
+    display: inline;
+  }
+  #logoicon {
+    width: 25px;
+  }
+  #searchicon {
+    width: 25px;
+  }
+  /* end of navbar large*/
+  #iphone12section {
+    background: url(mainbackgroundlarge.jpg);
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #iphone12section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+  }
+  #iphone12prosection {
+    background: url(iphoneprolarge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 65px;
+    height: 700px;
+  }
+  #iphone12prosection h2 {
+    padding-top: 55px;
+    font-size: 2.5em;
+  }
+  #iphone12prosection div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+  }
+}
