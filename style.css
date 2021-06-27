@@ -72,7 +72,8 @@ body {
 #iphone12section p {
   font-size: 14px;
   text-align: center;
-  width: 90%;
+  width: 80%;
+  display: inline-block;
 }
 #iphone12section a {
   text-decoration: none;
@@ -99,7 +100,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 15px;
   width: 100%;
 }
 /* end of iphone section */
@@ -137,6 +139,7 @@ body {
   width: 70%;
   color: gray;
   margin-top: 0px;
+  display: inline-block;
 }
 #iphone12prosection a,
 #ipadprosection a {
@@ -156,540 +159,30 @@ body {
   position: relative;
   margin-top: 15px;
 }
-/* end of iphonepro and ipadpro section */
-/*
-#iphonesection,
-#iphoneprosection,
-.ipadprosection {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
-#iphonesection a {
-  text-decoration: none;
-  color: rgb(7, 124, 219);
-  font-weight: 500;
-  font-size: 1em;
-  display: flex;
-  flex-direction: column;
-}
-
-#buyonline {
-  font-size: 0.853em;
-  font-weight: 400;
-  padding-top: 8px;
-  opacity: 1.2;
-  display: flex;
-  align-self: center;
-  letter-spacing: -0.01em;
-  position: relative;
-  top: -20px;
-  left: -2px;
-  z-index: 11;
-}
-#buyonline a {
-  font-size: 0.99em;
-  letter-spacing: -0.02em;
-  font-weight: 500;
-}
-#iphonesection h2 {
-  color: black;
-  display: block;
-  font-size: 3.4em;
-  font-weight: 500;
-  letter-spacing: -2px;
-  z-index: 12;
-  position: relative;
-  align-self: center;
-  top: 20px;
-  margin: auto;
-  max-height: 3.4em;
-}
-#mainbackgroundsmall {
-  display: block;
-  height: 740px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: relative;
-  z-index: 1;
-  top: -330px;
-}
-
-#mainbackgroundsall {
-  display: none;
-}
-#iphonesection h3 {
-  color: black;
-  font-size: 1.65em;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  opacity: 1.2;
-  display: block;
-  align-self: center;
-  position: relative;
-  top: -15px;
-
-  z-index: 20;
-}
-#buyonline2 {
-  font-size: 1.05em;
-  font-weight: 400;
-  color: grey;
-  opacity: 1;
-  display: block;
-  align-self: center;
-  letter-spacing: 0em;
-  position: relative;
-  top: -57px;
-
-  z-index: 10;
-}
-#buylinks {
-  font-size: 1.19em;
-  font-weight: 300;
-  color: rgb(11, 72, 185);
-  opacity: 1;
-  display: flex;
-  gap: 40px;
-  letter-spacing: -0.02em;
-  position: relative;
-  top: -58px;
-  left: -2px;
-  z-index: 11;
-}
-#buylinks a:hover {
-  text-decoration: underline;
-}
-#buylinks a:focus {
-  outline: 0.3em solid rgb(69, 92, 223);
-  transition: 0s;
-}
-#mainbackgroundlarge,
-#iphoneprolarge,
-.ipadprolarge {
-  display: none;
-}
-#mainbackgroundsmall {
-  display: block;
-  height: 740px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: relative;
-  z-index: -1;
-}
-#iphoneprosmall,
-.ipadprosmall {
-  display: block;
-  height: 740px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: relative;
-  z-index: -1;
-}
-
-/* -----------------DESKTOP------------- */
-/*
-@media only screen and (min-width: 734px) {
-  #menunav {
-    height: 44px;
-  }
-  #navelements {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: -40px;
-    align-content: center;
-    gap: 3.3em;
-    list-style-type: none;
-    width: 100%;
-  }
-  #smallnavelements {
-    display: none;
-  }
-  #navelements li {
-    float: left;
-  }
-  #navelements a {
-    color: white;
-    transition: 0.2s;
-    text-decoration: none;
-    display: flex;
-    padding-left: 20px;
-    padding-right: 10px;
-    font-weight: lighter;
-    padding: 0 10px;
-    letter-spacing: 0.06em;
-    font-size: 14px;
-    opacity: 0.8;
-    position: relative;
-    top: -5px;
-  }
-  #navelements a:hover {
-    opacity: 1;
-    color: white;
-  }
-  #navelements a:focus {
-    outline: 0.3em solid rgb(69, 92, 223);
-    transition: 0s;
-  }
-  #logosmall {
-    margin-top: -10px;
-    width: 15px;
-  }
-
-  #navapplelogo a:focus {
-    outline: 0;
-  }
-
-  #shopcart {
-    height: 42px;
-    width: 27px;
-    position: relative;
-    top: -23px;
-    margin-top: 15px;
-    margin-bottom: -35px;
-    padding-top: -23px;
-    padding-bottom: -33px;
-    transition: none;
-  }
-  #navcartlogo a:focus {
-    border: 0.3em solid rgb(69, 92, 223);
-    margin-top: -4px;
-    margin-left: -4px;
-
-    outline: none;
-  }
-  #searchimg {
-    margin-top: 2.5px;
-    filter: invert(100%);
-    width: 17px;
-  }
-  #iphonesection,
-  #iphoneprosection,
-  .ipadprosection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #iphonesection a {
-    text-decoration: none;
-    color: rgb(7, 124, 219);
-    font-weight: 500;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #buyonline {
-    font-size: 0.853em;
-    font-weight: 400;
-    padding-top: 8px;
-    opacity: 1.2;
-    display: flex;
-    align-self: center;
-    letter-spacing: -0.01em;
-    position: relative;
-    top: -20px;
-    left: -2px;
-    z-index: 11;
-  }
-  #buyonline a {
-    font-size: 0.99em;
-    letter-spacing: -0.02em;
-    font-weight: 500;
-  }
-  #iphonesection h2 {
-    color: black;
-    display: block;
-    font-size: 3.4em;
-    font-weight: 500;
-    letter-spacing: -2px;
-    z-index: 12;
-    position: relative;
-    align-self: center;
-    top: 20px;
-    margin: auto;
-    max-height: 3.4em;
-  }
-  #mainbackgroundlarge {
-    display: block;
-    height: 740px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    z-index: 1;
-    top: -330px;
-  }
-  #iphonesection h3 {
-    color: black;
-    font-size: 1.65em;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    opacity: 1.2;
-    display: block;
-    align-self: center;
-    position: relative;
-    top: -15px;
-
-    z-index: 20;
-  }
-  #buyonline2 {
-    font-size: 1.05em;
-    font-weight: 400;
-    color: grey;
-    opacity: 1;
-    display: block;
-    align-self: center;
-    letter-spacing: 0em;
-    position: relative;
-    top: -57px;
-
-    z-index: 10;
-  }
-  #buylinks {
-    font-size: 1.19em;
-    font-weight: 300;
-    color: rgb(11, 72, 185);
-    opacity: 1;
-    display: flex;
-    gap: 40px;
-    letter-spacing: -0.02em;
-    position: relative;
-    top: -58px;
-    left: -2px;
-    z-index: 11;
-  }
-  #buylinks a:hover {
-    text-decoration: underline;
-  }
-  #buylinks a:focus {
-    outline: 0.3em solid rgb(69, 92, 223);
-    transition: 0s;
-  }
-  #iphoneprosection,
-  .ipadprosection {
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: 0px;
-    position: relative;
-    top: -295px;
-  }
-
-  #iphoneprosection a,
-  .ipadprosection a {
-    text-decoration: none;
-    color: rgb(7, 124, 219);
-    font-weight: 500;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #buyproonline a,
-  #buyipadproonline a {
-    font-size: 0.99em;
-    letter-spacing: -0.02em;
-    font-weight: 500;
-  }
-  #iphoneprosection h2,
-  .ipadprosection h2 {
-    display: block;
-    font-size: 3.4em;
-    font-weight: 500;
-    letter-spacing: -2px;
-    z-index: 12;
-    position: relative;
-    align-self: center;
-    top: -312px;
-    margin: auto;
-    max-height: 30px;
-    color: white;
-  }
-
-  #iphoneprosection h3,
-  .ipadprosection h3 {
-    font-size: 1.65em;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    opacity: 1.2;
-    display: block;
-    align-self: center;
-    position: relative;
-    margin: auto;
-    color: white;
-    z-index: 20;
-  }
-
-  #buyproonline,
-  #buyipadproonline {
-    font-size: 1.05em;
-    font-weight: 400;
-    color: grey;
-    opacity: 1;
-    display: block;
-    align-self: center;
-    letter-spacing: 0em;
-    position: relative;
-
-    z-index: 10;
-  }
-
-  #buyprolinks,
-  #buyipadprolinks {
-    font-size: 1.19em;
-    font-weight: 300;
-    color: rgb(11, 72, 185);
-    opacity: 1;
-    display: flex;
-    align-self: center;
-    gap: 40px;
-    letter-spacing: -0.02em;
-    position: relative;
-
-    z-index: 11;
-  }
-
-  #buyprolinks a:hover,
-  #buyipadprolinks a:hover {
-    text-decoration: underline;
-  }
-  #buyprolinks a:focus,
-  #buyipadprolinks a:focus,
-  #buyonline a:focus {
-    outline: 0.29em solid rgb(69, 136, 223);
-    transition: 0s;
-  }
-  #mainbackgroundsmall {
-    display: none;
-  }
-  #iphoneprolarge {
-    display: block;
-    height: 693px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    z-index: 1;
-  }
-  #iphoneprolarge img {
-    display: block;
-    height: 693px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    z-index: 1;
-  }
-  #iphoneprolarge a {
-    height: auto;
-  }
-  #iphoneprosmall {
-    display: none;
-  }
-  .ipadprolarge {
-    display: block;
-    height: 793px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    z-index: 1;
-    top: 00px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  #firstipad1 {
-    margin-top: 0px;
-  }
-  .ipadprolarge img {
-    height: 693px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    z-index: 1;
-  }
-  .ipadprosmall {
-    display: none;
-  }
-
-  #iphonesection {
-    height: 1100px;
-  }
-  #buyonline a:last-child {
-    color: grey;
-  }
-  #iphoneprosection h2 {
-    top: 210px;
-  }
-  .ipadprosection h2 {
-    top: 60px;
-  }
-  #iphoneprosection h3 {
-    top: 248px;
-  }
-  .ipadprosection h3 {
-    top: 100px;
-  }
-  #buyproonline {
-    top: 235px;
-  }
-  #buyipadproonline {
-    top: 100px;
-  }
-  #buyprolinks {
-    top: 235px;
-  }
-  #buyipadprolinks {
-    top: 100px;
-  }
-  #cubesection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-
-  .cube {
-    padding: 10px;
-
-    border-radius: 10px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-family: sans-serif;
-    width: 40%;
-    background-image: url(ipadprosmall.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-  }
-  .cube img {
-    display: none;
-  }
-  .cube a {
-    text-decoration: none;
-    color: black;
-  }
-}
-JUST FINISH MOBILE VIEW */
-/* dont copy thissss below*/
 .taepercent {
   text-decoration: underline;
   font-weight: bold;
   display: inline;
 }
+#iphone12prosection div,
+#ipadprosection div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+.cubes {
+  display: none;
+}
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 610px) {
+  #menunav {
+    height: 45px;
+    align-items: center;
+  }
+
   #navbarsmall {
     display: none;
   }
@@ -699,6 +192,7 @@ JUST FINISH MOBILE VIEW */
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
+
     width: 100%;
   }
   #navbarlarge a {
@@ -735,6 +229,27 @@ JUST FINISH MOBILE VIEW */
     gap: 50px;
     width: 100%;
   }
+  #iphone12section h2,
+  #iphone12prosection h2 {
+    font-size: 2.5em;
+    padding-top: 50px;
+  }
+  #iphone12section h3,
+  #iphone12prosection h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  #iphone12section a,
+  #iphone12prosection a {
+    font-weight: 400;
+    font-size: 1.1em;
+    opacity: 100%;
+  }
+  #iphone12section p:nth-of-type(2),
+  #iphone12prosection p:nth-of-type(1) {
+    font-size: 1.1em;
+    width: 85%;
+  }
   #iphone12prosection {
     background: url(iphoneprolarge.jpg);
     background-size: cover;
@@ -743,10 +258,6 @@ JUST FINISH MOBILE VIEW */
     margin-top: 65px;
     height: 700px;
   }
-  #iphone12prosection h2 {
-    padding-top: 55px;
-    font-size: 2.5em;
-  }
   #iphone12prosection div {
     display: flex;
     flex-direction: row;
@@ -754,5 +265,88 @@ JUST FINISH MOBILE VIEW */
     align-items: center;
     gap: 35px;
     width: 100%;
+  }
+  /* cubessss */
+  .cubes {
+    display: block;
+
+    margin-top: 25px;
+    height: 700px;
+  }
+  .cuberow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    align-self: center;
+  }
+  .cubecolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #ios15,
+  #watchos8,
+  #ipados15,
+  #macos {
+    margin-top: 25px;
+    width: 48%;
+    height: 470px;
+  }
+
+  #ios15 {
+    background: url(ios15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #watchos8 {
+    background: url(watchos8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #ipados15 {
+    background: url(ipados15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #macos {
+    background: url(macos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #ios15 p,
+  #watchos8 p,
+  #ipados15 p,
+  #macos p {
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #ios15 a,
+  #watchos8 a,
+  #ipados15 a,
+  #macos a {
+    text-decoration: none;
+    color: rgb(68, 163, 223);
+  }
+  #ios15 h2,
+  #watchos8 h2,
+  #ipados15 h2,
+  #macos h2 {
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: black;
+    font-weight: 500;
   }
 }
