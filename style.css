@@ -26,14 +26,17 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+
+  align-self: center;
+  width: 90%;
+  margin: auto;
 }
 #navbarsmall a {
   opacity: 80%;
 }
 #shopcarticon {
-  height: 52px;
-  width: 52px;
+  height: 45px;
+  width: 45px;
   position: relative;
   top: -23px;
 
@@ -46,7 +49,7 @@ body {
   width: 22px;
 }
 #logoicon {
-  width: 22px;
+  width: 19px;
 }
 /* end of nav */
 #iphone12section {
@@ -56,8 +59,8 @@ body {
   align-items: center;
 
   background: url(mainbackgroundsmall.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: 50% 45%;
+  background-size: 750px;
   background-repeat: no-repeat;
   height: 650px;
   position: relative;
@@ -80,21 +83,22 @@ body {
   color: rgb(68, 163, 223);
 }
 #iphone12section h2 {
-  font-size: 2em;
+  font-size: 1.8em;
+  font-weight: 500;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 #iphone12section h3 {
   font-size: 1.2em;
   margin-top: 0px;
-  font-weight: 100;
+  font-weight: 400;
 }
 #iphone12section p:nth-of-type(2) {
   font-size: 0.9em;
   margin-top: -10px;
   font-weight: 400;
-  width: 60%;
-  opacity: 80%;
+  width: 59%;
+  opacity: 60%;
 }
 #iphone12section div {
   display: flex;
