@@ -180,7 +180,6 @@ body {
 @media screen and (min-width: 610px) {
   #menunav {
     height: 45px;
-    align-items: center;
   }
 
   #navbarsmall {
@@ -189,9 +188,9 @@ body {
   #navbarlarge {
     display: flex;
 
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     width: 100%;
   }
@@ -208,10 +207,17 @@ body {
     display: inline;
   }
   #logoicon {
-    width: 25px;
+    width: 16px;
+    margin-left: -15px;
   }
   #searchicon {
-    width: 25px;
+    width: 17px;
+    filter: invert(100%);
+    margin-top: 5px;
+  }
+  #shopcarticon {
+    width: 17px;
+    padding-right: 25px;
   }
   /* end of navbar large*/
   #iphone12section {
@@ -221,7 +227,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
-  #iphone12section div {
+  #iphone12section div,
+  #iphone12prosection div,
+  #ipadprosection div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -230,23 +238,27 @@ body {
     width: 100%;
   }
   #iphone12section h2,
-  #iphone12prosection h2 {
+  #iphone12prosection h2,
+  #ipadprosection h2 {
     font-size: 2.5em;
     padding-top: 50px;
   }
   #iphone12section h3,
-  #iphone12prosection h3 {
+  #iphone12prosection h3,
+  #ipadprosection h3 {
     font-size: 1.5em;
     font-weight: 400;
   }
   #iphone12section a,
-  #iphone12prosection a {
+  #iphone12prosection a,
+  #ipadprosection a {
     font-weight: 400;
     font-size: 1.1em;
     opacity: 100%;
   }
   #iphone12section p:nth-of-type(2),
-  #iphone12prosection p:nth-of-type(1) {
+  #iphone12prosection p:nth-of-type(1),
+  #ipadprosection p:nth-of-type(1) {
     font-size: 1.1em;
     width: 85%;
   }
@@ -266,11 +278,20 @@ body {
     gap: 35px;
     width: 100%;
   }
+  #ipadprosection {
+    background: url(ipadprolarge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 25px;
+    height: 700px;
+  }
   /* cubessss */
   .cubes {
     display: block;
 
     margin-top: 25px;
+
     height: 700px;
   }
   .cuberow {
